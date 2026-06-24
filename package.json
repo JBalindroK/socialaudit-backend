@@ -1,10 +1,12 @@
 {
   "name": "socialaudit-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "SocialAudit.be Backend API — vérification préventive de fiches de paie intérimaires",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "echo \"No tests specified\" && exit 0"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +16,7 @@
     "@anthropic-ai/sdk": "^0.105.0",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "express-rate-limit": "^7.5.0"
   }
 }
